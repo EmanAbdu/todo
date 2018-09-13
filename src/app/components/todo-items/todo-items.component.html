@@ -1,0 +1,31 @@
+<div class="todo-section" style="margin:5px 0px" style="font-size:20px;" @flyInOut>
+
+  <ul class="list-group">
+
+    <li class="list-group-item" *ngFor="let todo of todos; index as i">
+
+      <input id="item {{i}}" type="checkbox" [checked]="todo.checked" (click)="onCheck(todo.id, todo.checked)">
+      
+      <label for="item {{i}}">
+        <font face="Lucida Calligraphy">
+          <span>{{i}}{{todo.name}}</span>
+        </font>
+      </label>
+      
+        <button mat-icon-button color="warn" class="removeTodo" (click)="onDelete(todo)">
+          <mat-icon aria-label="Example icon-button with a delete icon" class="delete-icon">delete</mat-icon>
+        </button>
+
+        <button mat-icon-button color="warn" class="editTodo" (click)="openDialog(todo)">
+          <mat-icon aria-label="Example icon-button with edit icon" class="edit-icon">edit</mat-icon>
+        </button>
+    
+
+      <!-- <button class="choose" (click)="showIcons()" [class.show]="chooseIsShown===true" [class.hide]="chooseIsShown===false">|</button> -->
+
+
+    </li>
+  </ul>
+</div>
+
+<app-todo-progress [progress]="progress"></app-todo-progress>

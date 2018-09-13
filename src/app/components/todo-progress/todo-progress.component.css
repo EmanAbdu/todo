@@ -1,0 +1,23 @@
+.progress-section{
+  border-radius:20px;
+  margin-top:10px;
+  border: 1px solid rgb(44, 24, 170);
+  background-color:rgba(50,50,50,0.6);
+  width:100%;
+  padding:15px;
+
+}
+
+.progressValue{
+  position: relative;
+  top:15px;
+  font-size: 30px;
+
+}
+
+mat-progress-bar{
+  margin-right:auto;
+  margin-left:auto;
+  width: 90% !important;
+  height: 15px !important;
+}

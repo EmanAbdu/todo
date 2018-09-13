@@ -1,0 +1,32 @@
+.todo-input-wrapper {
+  margin-top: 40px;
+  background-color:rgba(50,50,50,0.6);
+  border-radius:15px 15px 0 0;
+  padding-top:15px;
+}
+
+.example-full-width {
+  width: 90%;
+  color:white;
+}
+
+.example-full-width input{
+  border-bottom:0.2px solid grey;
+  margin-bottom: -8px;
+  width:100%;
+  font-size:20px;
+}
+
+.add-button{
+  border: 2px solid #673ab7;
+  color:none;
+  padding-bottom: 30px;
+  color:#673ab7;
+}
+
+input {
+  width:300px;
+  margin-right: 10px;
+  padding: 5px;
+  line-height: 17px;
+}

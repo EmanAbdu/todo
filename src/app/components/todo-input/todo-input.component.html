@@ -1,0 +1,19 @@
+<div class="todo-input-wrapper">
+
+  <mat-form-field class="example-full-width" color="accent">
+
+    <input enterInput matInput type="text" placeholder="My task" [(ngModel)]="addedItem" />
+
+    <button mat-button *ngIf="addedItem" matSuffix mat-icon-button aria-label="clearValue" (click)="addedItem=''">
+      <mat-icon>close</mat-icon>
+    </button>
+
+  </mat-form-field>
+
+  <!-- <button mat-mini-fab color="none" class="add-button" (click)="onAdd(addedItem)">
+    <mat-icon aria-label="add icon">add</mat-icon>
+  </button> -->
+
+</div>
+
+<app-todo-items [todos]="todos" [progress]="progress"></app-todo-items>
